@@ -1,0 +1,25 @@
+#contactArea{
+    display: inherit;
+}
+
+#commArea{
+    display: none;
+}
+
+.formC span{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.formC input{
+    margin: 10px;
+    border: none;
+    border-bottom: 1px solid black ; 
+}
+
+.formC #submit{
+    background-color: black;
+    padding: 8px;
+    color: white;
+    cursor: pointer;
+}
