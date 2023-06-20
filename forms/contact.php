@@ -1,23 +1,25 @@
-<?php
-  $receiving_email_address = 'contact@lp.com';
+<?php 
+	$mesaj = $_POST['mesaj'];
+	$email = "tiberiuprelipcian16@gmail.com";
+	$recipient = "tiberiuprelipcian16@gmail.com";
+	$subject = "Mimi";
+	$mailheader = "From: Mimi \n";
 
-  if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
-    include( $php_email_form );
-  } else {
-    die( 'Unable to load the "PHP Email Form" Library!');
-  }
+	mail($recipient, $subject, $mesaj, $mailheader);
+	echo "
+	
+	<center>
+    <a 
+style = '
+background-color: black; 
+color: white;
+border-radius: 30px;
+padding: 10px;
+text-decoration: none;
+margin: 10vw;
+'
+href='http://qxzyq.avantisys-tech.com'>Back</a>
 
-  $contact = new PHP_Email_Form;
-  $contact->ajax = true;
-  
-  $contact->to = $receiving_email_address;
-  $contact->from_name = $_POST['name'];
-  $contact->from_email = $_POST['email'];
-  $contact->subject = $_POST['subject'];
-
-  $contact->add_message( $_POST['name'], 'From');
-  $contact->add_message( $_POST['email'], 'Email');
-  $contact->add_message( $_POST['message'], 'Message', 10);
-
-  echo $contact->send();
+</center>
+";
 ?>
