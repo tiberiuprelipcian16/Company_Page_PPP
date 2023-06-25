@@ -2,8 +2,8 @@
 	$mesaj = $_POST['mesaj'];
 	$email = "tiberiuprelipcian16@gmail.com";
 	$recipient = "tiberiuprelipcian16@gmail.com";
-	$subject = "Contact Lp IT Company";
-	$mailheader = "From: Lp IT \n";
+	$subject = "Contact Pnt IT Company";
+	$mailheader = "From: Pnt IT \n";
 
 	mail($recipient, $subject, $mesaj, $mailheader);
 	echo "
